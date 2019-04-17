@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Performance Cars</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- This is the container for the car buttons. This will be populated by the JS call once the page loads. -->
+  <div id="car-buttons"></div>
+
+    <!-- This is the area in the page where new car gifs are added. Forms attributes are used to collect user input.-->
+    <form id="car-form">
+        <!-- This is the header for the input form -->
+        <label for="car-input">Add a car</label>
+        <!-- This is the text area for the input form. type is for text input. Input tags can only be used within a form element.
+        input tag has no end tag. -->
+        <input type="text" id="car-input">
+        <!-- this is the submit button because of the input tag that it is.-->
+        <input id="add-car" type="submit" value="Add Car">
+    </form>
+
+    <!-- this is where all the car gifs will be. -->
+  <div id="cars"></div>
+
+  <!-- scripts go at the bottom. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  
+</body>
+</html>
